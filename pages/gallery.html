@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史图片 - 三湾改编专题网站</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>三湾改编</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="background.html">历史背景</a></li>
+                <li><a href="content.html">主要内容</a></li>
+                <li><a href="significance.html">历史意义</a></li>
+                <li><a href="influence.html">深远影响</a></li>
+                <li><a href="gallery.html">历史图片</a></li>
+                <li><a href="quotes.html">重要语录</a></li>
+                <li><a href="quiz.html">知识问答</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="menu-text">菜单</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 图片展示页面 -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>三湾改编历史图片</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('../images/1.jpg', '三湾改编旧址')">
+                    <img data-src="../images/1.jpg" alt="三湾改编旧址" class="lazy">
+                    <div class="caption">三湾改编旧址</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/2.jpg', '毛泽东在三湾')">
+                    <img data-src="../images/2.jpg" alt="毛泽东在三湾" class="lazy">
+                    <div class="caption">毛泽东在三湾</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/3.jpg', '秋收起义部队')">
+                    <img data-src="../images/3.jpg" alt="秋收起义部队" class="lazy">
+                    <div class="caption">秋收起义部队</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/4.jpg', '支部建在连上')">
+                    <img data-src="../images/4.jpg" alt="支部建在连上" class="lazy">
+                    <div class="caption">支部建在连上</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/5.jpg', '官兵平等')">
+                    <img data-src="../images/5.jpg" alt="官兵平等" class="lazy">
+                    <div class="caption">官兵平等</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/6.jpg', '三湾改编纪念馆')">
+                    <img data-src="../images/6.jpg" alt="三湾改编纪念馆" class="lazy">
+                    <div class="caption">三湾改编纪念馆</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/7.jpg', '革命历史展览')">
+                    <img data-src="../images/7.jpg" alt="革命历史展览" class="lazy">
+                    <div class="caption">革命历史展览</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('../images/8.jpg', '三湾村全景')">
+                    <img data-src="../images/8.jpg" alt="三湾村全景" class="lazy">
+                    <div class="caption">三湾村全景</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>铸军魂之路：三湾改编专题网站</h3>
+                    <p>版权所有 © 2023 三湾改编专题网站</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="background.html">历史背景</a></li>
+                        <li><a href="content.html">主要内容</a></li>
+                        <li><a href="significance.html">历史意义</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@sanwan.com</p>
+                    <p>电话：0796-XXX-XXXX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片灯箱 -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
